@@ -4,10 +4,11 @@ import kz.sagadat.spring.todolist.dao.TodoListRepository;
 import kz.sagadat.spring.todolist.entity.TodoList;
 import kz.sagadat.spring.todolist.service.TodoListService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
-
+@Service
 public class TodoListServiceImpl implements TodoListService {
     @Autowired
     private TodoListRepository todoListRepository;

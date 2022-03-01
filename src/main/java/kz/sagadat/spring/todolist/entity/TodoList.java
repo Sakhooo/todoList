@@ -9,7 +9,7 @@ import javax.annotation.processing.Generated;
 import javax.persistence.*;
 
 @Entity
-@Table
+@Table(name = "todo_lists")
 @Builder
 @Data
 @NoArgsConstructor
@@ -31,6 +31,6 @@ public class TodoList {
     @Column(name = "description")
     String description;
 
-    @Column(name = "done")
+    @Column(name = "is_done")
     boolean done;
 }
